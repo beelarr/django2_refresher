@@ -3,5 +3,6 @@ from first_app import views
 
 
 urlpatterns = [
-    url('', views.index, name='index'),
+    url('first_app', views.index, name='index'),
+    url('help', views.help, name='help')
 ]
