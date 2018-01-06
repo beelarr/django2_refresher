@@ -1,8 +1,8 @@
-from django.conf.urls import url
+from django.urls import path
 from first_app import views
 
 
 urlpatterns = [
-    url('first_app', views.index, name='index'),
-    url('help', views.help, name='help')
+    path('', views.index, name='index'),
+    path('help/', views.help, name='help')
 ]
